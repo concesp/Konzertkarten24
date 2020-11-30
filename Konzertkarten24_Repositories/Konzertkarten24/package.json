@@ -9,7 +9,7 @@
   "author": "WinWomWeb",
   "license": "ISC",
   "dependencies": {
-    "better-sqlite3": "^3.33.0",
+    "better-sqlite3": "^5.4.3",
     "express": "^4.17.1",
     "luxon": "^1.19.3",
     "md5": "^2.2.1"

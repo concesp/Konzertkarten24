@@ -2,63 +2,83 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Kaufbestätigung</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>Bestellbestätigung - Konzertkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
 
 	</head>
 	<body>	
 		<div class="container-fluid" style="background-color:white;">
 			<nav class="navbarnavbar-expand-sm bg-light">
 				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav container-fluid">
+					<div class="row">
 				<!--Links-->
-					<li class="nav-item">
-						<a class="nav-link" href="/Konzertkarten-Home.html">Home</a>
-				  	</li>
-				  	<li class="nav-item">
+					<div class="col-sm-3">
+			  		<li class="nav-item " >
+						<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					  </li>
+					</div>	<div class="col-sm-3">
+			  		<li class="nav-item">
 						<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
-				  	</li>
-				  	<li class="nav-item">
-					  <a class= "nav-link" href="Konzertkarten-News.html">News</a>
-				  	</li>
+					  </li>
+					</div> <div class="col-sm-3">
+			  		<li class="nav-item">
+			  			<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  </li>
+					</div><div class="col-sm-3">
 				<!--Logo-->
-					<a class="navbar-brand">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" ;/>
-					
-
-					</a>
+					<li class="navbar-brand">
+						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
+					</li>
+					</div>
+				</div>
 
 				</ul>
 			</nav>
 		</div>
 					
-		  <div class="container-fluid">
-			<h3>xxx</h3>
-			<p>xxx</p>
+		  <div class="container-fluid" style="background-color: white;">
+			<div class="bestell">
+				<h2>Bestellbestätigung</h2><br /><br />
+				<b><p>Hallo Herr/Frau ######</p><br /></b>
+				<p>Wir haben ihren Auftrag mit der Bestellnummer <b>#####</b> erhalten. 
+				Nach erfolgreichem Zahlungseingang werden die Tickets innerhalb von 3-5 Werktagen per Post an Sie, an die von Ihnen genannte Adresse geschickt:</p><br />
+				<p>Max Mustermann</p>
+				<p>Musterstr.1</p>
+				<p>12345 Musterstadt</p><br /><br />
+				<p>Wenn Sie Vorkasse gewählt haben, bitten wir Sie um Überweisung des Betrages an:</p><br />
+				<p><b>Kontoinhaber:</b> Konzertkarten24 AG & Co. KGaA</p>
+				<p><b>IBAN:</b> DE12 6905 1620 1234 5678 90</p>
+				<p><b>BIC:</b> SOLADESXX</p>
+				<p><b>Kreditinstitut:</b> Sparkasse Bremen</p>
+				<p><b>Verwendungszweck:</b> <i>#####(identische Bestellnummer)#####</i></p><br /><br />
+				<p>Viel Spaß bei ihrem Konzert!</p><br />
+				<p>Ihr Konzertkarten24-Team</p><br /><br /><br />
+				<p>Bei Rückfragen zu Ihrer Bestellung oder bei falsche Angaben der Adressdaten, nehmen Sie Kontakt zu uns über die Bestellhotline auf. Zur Identifikation benötigen wie nur die Bestellnummer.</p>
+			</div>
 		  </div>
 
 		  <footer class="footer">
 			<div class="container-fluid">
 			  <div class="row">
-	
-					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
-						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
-					  </div>				
+							<div class="col-sm-3">
+							<a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+							<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+							<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
+						</div>				
 					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
+						  <p class="responsiveFont">Bestellhotline 0800 25437723</p>
 					  </div>
 					  <div class="col-sm-3">
 						<div class="list-group">

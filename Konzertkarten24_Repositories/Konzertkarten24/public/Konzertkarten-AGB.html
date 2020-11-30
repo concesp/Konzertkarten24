@@ -2,48 +2,58 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>AGBs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>AGBs - Konzertkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
-
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
 	</head>
 	<body>	
 		<div class="container-fluid" style="background-color:white;">
 			<nav class="navbarnavbar-expand-sm bg-light">
 				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav container-fluid">
+					<div class="row">
 				<!--Links-->
-			  		<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-			  		</li>
-			  		<li class="nav-item">
-						<a class="nav-link" href="#">Konzerte</a>
-			  		</li>
-			  		<li class="nav-item">
-			  			<a class= "nav-link" href="#">News</a>
-					  </li>
-				<!--Logo-->
-					<a class="navbar-brand">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" ;/>
-					
+					<div class="col-sm-3">
+			  		<li class="nav-item " >
+						<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					</li>
+					</div>	
+					<div class="col-sm-3">
+			  			<li class="nav-item">
+							<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
+					  	</li>
+					</div> 
+					<div class="col-sm-3">
+			  			<li class="nav-item">
+			  				<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  	</li>
+					</div>
+					<div class="col-sm-3">
+					<!--Logo-->
+						<li class="navbar-brand">
+							<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
+						</li>
+					</div>
+				</div>
 
-					</a>
+			</ul>				
+		</nav>
+	</div>
+	<div class="container-fluid" id="idBackground">
 
-				</ul>
-			</nav>
-		</div>
-			<div class="container">
-				<h1>Allgemeine Geschäftsbedingunen (Internet)</h1>
-				<p>Die Konzertkarten24 AG & Co. KGaA (nachfolgend Konzertkarten24 genannt) ist nicht selbst Veranstalter der angebotenen Veranstaltungen. Diese werden durch den jeweiligen Veranstalter durchgeführt, der auch Aussteller der Tickets ist. Durch den Erwerb der Eintrittskarte kommen vertragliche Beziehungen im Hinblick auf den Veranstaltungsbesuch ausschließlich zwischen dem Karteninhaber (Kunden) und dem jeweiligen Veranstalter zustande. Möglicherweise gelten für diese rechtlichen Beziehungen eigene Allgemeine Geschäftsbedingungen des Veranstalters. Die Konzertkarten24 vertreibt die Tickets im Auftrag des jeweiligen Veranstalters als Vermittlerin oder als Kommissionärin, es sei denn, sie ist im Einzelfall ausdrücklich selbst als Veranstalter ausgewiesen. Mit der Bestellung von Tickets beauftragt der Kunde Konzertkarten24 mit der Abwicklung des Kartenkaufes einschließlich Versand.</p>
-				<p><strong>Themenübersicht</strong></p>
+		<h1>Allgemeine Geschäftsbedingunen (Internet)</h1>
+		<p>Die Konzertkarten24 AG & Co. KGaA (nachfolgend Konzertkarten24 genannt) ist nicht selbst Veranstalter der angebotenen Veranstaltungen. Diese werden durch den jeweiligen Veranstalter durchgeführt, der auch Aussteller der Tickets ist. Durch den Erwerb der Eintrittskarte kommen vertragliche Beziehungen im Hinblick auf den Veranstaltungsbesuch ausschließlich zwischen dem Karteninhaber (Kunden) und dem jeweiligen Veranstalter zustande. Möglicherweise gelten für diese rechtlichen Beziehungen eigene Allgemeine Geschäftsbedingungen des Veranstalters. Die Konzertkarten24 vertreibt die Tickets im Auftrag des jeweiligen Veranstalters als Vermittlerin oder als Kommissionärin, es sei denn, sie ist im Einzelfall ausdrücklich selbst als Veranstalter ausgewiesen. Mit der Bestellung von Tickets beauftragt der Kunde Konzertkarten24 mit der Abwicklung des Kartenkaufes einschließlich Versand.</p>
+		<p><strong>Themenübersicht</strong></p>
 				<ul>
 					<li>Geltungsbereich</li>
 					<li>Vertragsabschluss, Stornierung</li>
@@ -119,14 +129,12 @@
 			  <div class="row">
 	
 					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
-						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
+					    <a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+						<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+						<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
 					  </div>				
 					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
+						  <p class="responsiveFont">Bestellhotline 0800 25437723</p>
 					  </div>
 					  <div class="col-sm-3">
 						<div class="list-group">

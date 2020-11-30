@@ -2,90 +2,129 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Konzerte</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>Konzerte - Konzerkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
 
 	</head>
 	<body>	
 		<div class="container-fluid" style="background-color:white;">
 			<nav class="navbarnavbar-expand-sm bg-light">
-				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav container-fluid">
+					<div class="row">
 				<!--Links-->
-					<li class="nav-item">
-						<a class="nav-link" href="/Konzertkarten-Home.html">Home</a>
-				  	</li>
-				  	<li class="nav-item">
+					<div class="col-sm-3">
+			  		<li class="nav-item " >
+						<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					  </li>
+					</div>	<div class="col-sm-3">
+			  		<li class="nav-item">
 						<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
-				  	</li>
-				  	<li class="nav-item">
-					  <a class= "nav-link" href="Konzertkarten-News.html">News</a>
-				  	</li>
+					  </li>
+					</div> <div class="col-sm-3">
+			  		<li class="nav-item">
+			  			<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  </li>
+					</div><div class="col-sm-3">
 				<!--Logo-->
-					<a class="navbar-brand">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" ;/>
-					
-
-					</a>
-
+					<li class="navbar-brand">
+						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
+					</li>
+					</div>
+				</div>
 				</ul>
 			</nav>
-		</div>
-					
-		  <div class="container-fluid">
+		</div>		
+		  <div class="container-fluid ">
 			<br />
-			<div class="dropdown">
-				<button class="dropbtn">Suche nach Städten</button>
-				<div class="dropdown-content">
-				<a href="#">Berlin</a>
-				<a href="#">Frankfurt</a>
-				<a href="#">Hamburg</a>
-				<a href="#">München</a>
-				<a href="#">Stuttgart</a>
+			<div class="row">
+				<div class="col-sm-6 dropdown">
+					<select class="auswahlKonzert">
+						<option checked>Alle Städte anzeigen</option>
+						<option>Berlin</option>
+						<option>Frankfurt</option>
+						<option>Hamburg</option>
+						<option>München</option>
+						<option>Stuttgart</option>
+					</select>
 				</div>
-			  </div>
-			<div class="dropdown">
-				<button class="dropbtn">Suche nach Musikrichtung</button>
-				<div class="dropdown-content">
-				<a href="#">Pop</a>
-				<a href="#">Rock</a>
-				<a href="#">Schlager</a>
+				<div class="col-sm-6 dropdown">
+					<select class="auswahlKonzert">
+						<option checked>Alle Musikrichtungen anzeigen</option>
+						<option>Electronic</option>
+						<option>Hip Hop</option>
+						<option>Pop</option>
+						<option>Rock</option>
+						<option>Schlager</option>
+					</select>
 				</div>
 			</div>
-
-			<h3>xxx</h3>
-			<p>xxx</p>
-			<p>xxx</p>
-			<p>xxx</p>
-			<p>xxx</p>
-			<p>xxx</p>
-			<p>xxx</p>
-			<p>xxx</p><p>xxx</p>
-			<p>xxx</p>
+			<div class="kon">
+				<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<a href="Konzertkarten-Kaufabwicklung1.html"><img src="../../Bilder_Hompage/1_Karte.jpeg" class="konzertkarte" alt="Konzertkarte"></a>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">Robbie Williams</h2>
+						<b>Konzertorte: Hamburg, München, Stuttgart</b>
+						<p>Robert Peter „Robbie“ Williams (* 13. Februar 1974 in Stoke-on-Trent, England) ist ein britischer Sänger. Er wurde 1990 als Mitglied der Boygroup Take That bekannt und ist seit seinem Ausstieg auch als Solokünstler erfolgreich.
+							Am 4. November 2016 erschien mit The Heavy Entertainment Show Williams’ elftes Studioalbum. Erste Single wurde „Party Like a Russian“, stärkere Resonanz fand jedoch die zweite Auskopplung „Love My Life“, nach „Go Gentle“ (Swings Both Ways) ein weiteres Liebeslied des zweifachen Vaters an seine Kinder. Eine Tournee folgte zu Beginn des Jahres 2017. </p>
+					</div>
+					<div class="col-sm-2">
+								<a class="kaufbutton" href="Konzertkarten-Kaufabwicklung1.html" >Tickets<br /> ab 19,99€</a>
+					</div>
+				</div>
+				<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<a href="Konzertkarten-Kaufabwicklung1.html"><img src="../../Bilder_Hompage/2_Karte.jpeg" class="konzertkarte" alt="Konzertkarte"></a>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">The Strokes</h2>
+						<b>Konzertorte: Berlin, München</b>
+						<p>The Strokes (engl. [strəʊks]) sind eine US-amerikanische Rockband aus New York City. Die Band gilt als Vertreter des Garage Rocks. Im Laufe der Zeit haben sie ihren Stil durch New-Wave-Einflüsse weiterentwickelt. 
+							Die Bandmitglieder von „The Strokes“ stammen hauptsächlich aus wohlhabenden Verhältnissen und befassen sich inhaltlich sowie stilistisch mit klassischen Rock ’n’ Roll-Themen. Mit der EP The Modern Age begann 2001 das musikalische Leben der Strokes. Bei der anschließenden Tour durch die britischen Clubs wurde ihnen eine Hysterie entgegengebracht, die man in England bisher nur bei britischen Newcomer-Bands kannte. 
+						</p>
+					</div>
+					<div class="col-sm-2">
+							<a class="kaufbutton" href="Konzertkarten-Kaufabwicklung1.html" >Tickets<br /> ab 19,99€</a>
+					</div>
+				</div>
+				<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<a href="Konzertkarten-Kaufabwicklung1.html"><img src="../../Bilder_Hompage/3_Karte.jpeg" class="konzertkarte" alt="Konzertkarte"></a>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">One Republic</h2>
+						<b>Konzertorte: Frankfurt, Stuttgart</b>
+						<p>OneRepublic ist eine US-amerikanische Pop-Rock-Band aus Colorado, der 2007 durch das Lied Apologize der internationale Durchbruch gelang. 2013 übertrafen sie den Erfolg ihrer Debüt-Single mit dem Lied Counting Stars. Die neuesten Songs sind "Didn't I" und "Better Days".
+							Im Frühjahr 2002 wurde die Band vom Sänger und Produzenten Ryan Tedder mit Zach Filkins, dem späteren Gitarristen der Gruppe, gegründet. Ein Jahr später stießen Drew Brown, Eddie Fisher und Tim Myers zur Band hinzu (2003), es folgte der Plattenvertrag bei Columbia Records. Bereits 2006 wurde die Band über den Online-Dienst Myspace Music bekannt und konnte erste beachtliche Erfolge erzielen. Seit Juni 2006 wurden die Songs der Band auf der Plattform rund 22 Millionen Mal weltweit abgespielt. Zudem gehören sie seit Sommer 2006 zu den Top Artists auf MySpace.  </p>
+					</div>
+					<div class="col-sm-2">
+							<a class="kaufbutton" href="Konzertkarten-Kaufabwicklung1.html" >Tickets<br /> ab 19,99€</a>
+					</div>
+				</div>			
+			</div>
 		  </div>
-
 		  <footer class="footer">
 			<div class="container-fluid">
 			  <div class="row">
-	
-					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
-						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
-					  </div>				
+						<div class="col-sm-3">
+							<a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+							<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+							<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
+						</div>				
 					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
+						  <p class="responsiveFont">Bestellhotline 0800 25437723</p>
 					  </div>
 					  <div class="col-sm-3">
 						<div class="list-group">

@@ -1,11 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
   }
-  /*     Universalselektor *  =auf alle Elemente anwenden  */
-  header, nav, footer, article,main {
-      display: block;
-      overflow: hidden;
-  }
+ 
+.container-fluid{
+    display: grid;
+} 
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -15,14 +17,17 @@ body{
     color: black;
     text-align: left;
     background-color: rgb(231, 229, 229);
-    overflow: hidden;
 }
+
+h2{
+    color:  rgb(209, 81, 34);
+}
+
 
 .box {
     box-sizing: content-box;
     width:250px;
     height:250px;
- 
 }
 img{
     vertical-align: middle;
@@ -73,30 +78,50 @@ li.nav-item{
     flex-direction: row;
 }
 
+#home-link{
+    background-color: rgb(209, 81, 34);
+    font-size: 200%;
+}
+#home-link:hover{
+    background-color: rgb(138, 47, 14);
+} 
+#home-link1{
+    background-color: white;
+    color: gray;
+}
+#home-link-2{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 
 /*footer*/
 footer{
     background-color: rgb(155, 152, 152);
-    overflow: hidden;
+   
+    width: 100% 
 }
 
-div img{
+.rounded{
     border-radius: 1rem;
     margin-top: 1rem;
-    margin-right: 3rem;
+    margin-right: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
     
 }
 
 /*Links im footer*/
 .list-group{
-    display: flex;
+    display: block;
     flex-direction: column;
     border-radius: 0.25rem;
     margin: 1rem;
 }
 .list-group-item-action{
-    width: 30%;
+    width: 100%;
     color: rgb(68, 68, 68);
     text-align: inherit;
     display: block;
@@ -123,47 +148,80 @@ footer p{
 .container-fluid{
     width: 100%;
     margin-bottom: 20px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    overflow: hidden;
+    overflow: hidden; 
 }
-
-div.ex1 {
-    
-    width: auto;
-    height: 500px;
-    overflow: scroll;
-  }
-
 
 /*Slide-Show*/
 
-
-/*img {vertical-align: middle;}*/
-*, ::before, ::after{
-    box-sizing: inherit;
+.mySlides{
+    height: 500px;
+    width: 250px;
 }
 
-content{
+div.slide{
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-   
+}
+div.content.section{
+    vertical-align: middle;
+    margin-left: auto ;
+    margin-right: auto;
 }
 
-myslides{
 
+*, ::before, ::after{
+    box-sizing: block;
 }
+
+/*content{
+    overflow: hidden; 
+} */
+
 
 section{
     margin-top: 16px !important;
     margin-bottom: 16px !important;
+    max-width: 500 px;
 }
 
+/*Slide-Show Butten*/
 
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 20%;
+    border-radius: 3px 0 0 3px;
+  }
 
-@keyframe fading{
+  .prev {
+    left: 20%;
+     border-radius: 3px 0 0 3px;
+   }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/*animation-fading: fading 10s infinite;*/
+
+@keyframes fading{
 
 0%{
     opacity: 0;
@@ -178,79 +236,299 @@ section{
 }
 }
 
-animation-fading: fading 10s infinite;
-
+.animate-fading{
+    animation-name: fading;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
 
  /*Dropdown Menü Konzerte*/
- .dropbtn {
-    background-color:  white;
-    color: grey;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 2%;
-    margin-left: 4%;
   }
+  .auswahlKonzert{
+    border-radius: 5px; 
+    padding: 5px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
   
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
+
+/*Konzertseite*/
+.kon {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+}
+.reihe {
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(230, 228, 228);
+}
+.konzertkarte {
+    width:100%;
+    margin-top: 30px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+}
+#orangeh2 {
+    color:  rgb(209, 81, 34);
+}
+
+a.kaufbutton:hover {
+    background-color: rgb(138, 47, 14);
+}
+.kaufbutton:link, .kaufbutton:visited {
     background-color: rgb(209, 81, 34);
     color: white;
-  }    
+    font-size: 14px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 30%;
+    margin-right: 10%;
+    margin-top: 25%;
+    width: 120px;
+    height: 75px;
+    cursor: pointer;
+}
+/*Bestellbestätigung*/
+.bestell {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    margin: 2% 13%;
+    padding: 5%;
+    background-color: white;
+
+}
+/* Kaufformular, Dropdown */
+
+.picKauf1 {
+    width: 50%;
+    padding-right: 5%;
+    height: auto;
+    float: left;
+}
+
+.textKauf1 {
+    float: right;
+    width: 50%;
+    height: 250px;
+    font-size: large;
+}
+
+.headlineKauf1 {
+    color: rgb(209, 81, 34);
+    float: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+}
+
+.auswahlKauf1{
+    border-radius: 5px; 
+    padding: 5px;
+    width: 25%;
+    margin-top: 20px;
+}
+
+.datum1 {
+  margin-top:25px;
+  font-weight: bold;
+}
+#button2 {
+    margin-top: 5px;
+}
+.kaufbutton1 {
+    width: 30%; 
+    float: right; 
+    margin-left: 0%; 
+    margin-right: 0%; 
+    margin-top: 85px; 
+    padding-right: 0%; 
+    color: rgb(209, 81, 34);
+    font-size: 150%;
+    
+}
+.kaufbutton1:hover {
+    color:  rgb(138, 47, 14);
+    text-decoration: none;
+}
+/* Bestellübersicht Button */
+.button3 {
+    background-color: rgb(209, 81, 34);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2%;
+    margin-bottom: 2%;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 120px;
+    height: 75px;
+    cursor: pointer;
+    
+}
+.button3:hover {
+    background-color: rgb(138, 47, 14);
+}
+
+/*Formular*/
+
+input {
+    width: 15%;
+    border: rgb(184, 184, 182);
+    border-radius: 0.25rem;
+}
 
 
 
- /*********************************Respsonsiv****************************************/   
+/**************************************Respsonsiv***************************************************/   
+/* Schriftgröße respnsiv */
+.responsiveFont{
+    font-size:3vw;
+    margin-top: 10px;
+}
+/*Klein Geräte (Smartphone)*/
+@media (min-width: 576px) { 
+    /*.col-xs-*/
+footer{
+    font-size: 10px;
+}
 
+.d-xs-none{
+    display: none !important;
+}
 
+#idBackground{
+    background-color:white; 
+    padding-left: 5%; 
+    padding-right: 5%;
+}
 
-    /* Smartphones und weniger */
-    @media only screen and (max-width: 480px) { 
-        .navbar-expand-sm .navbar-nav .nav-link{
-            padding-left: .5rem;
-            padding-right: .5rem;
+}
 
-        }
+.main {
+    margin-left: 5px;
+  }
+  .counter {
+    width: 45px;  
+    border-radius: 0px !important;
+    text-align: center;
+  }
+  .up_count {
+    margin-bottom: 5px;  
+    margin-left: -5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 23px;
+    background-color: orange;
+  } 
+  .down_count {
+    margin-bottom: 5px;  
+    margin-right: -4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 23px;
+    background-color: orange;
+  }
 
-    } 
+.movebtn{
+    width:50px; 
+    display: inline-block; 
+    margin-bottom: 15px;
+}
 
-    @media screen and (max-width: 480px) {
-        .nav > li {
-            float: none;
-        }
-        .nav ul {
-            display: block;
-            width: 100%;
-        }
-       .nav > li.hover > ul , .nav li li.hover ul {
-            position: static;
-        }
+.movetext{
+    width:100px; display: inline-block;
+}
+
+.coolBeans
+  border 2px solid currentColor
+  border-radius 3rem
+  color yellow
+  font-family roboto
+  font-size 4rem
+  font-weight 100
+  overflow hidden
+  padding 1rem 2rem
+  position relative
+  text-decoration none
+  transition .2s transform ease-in-out
+  will-change transform
+  z-index 0
+  
+  &::after
+    background-color yellow
+    border-radius 3rem
+    content: ''
+    display block
+    height 100%
+    width 100%
+    position absolute
+    left 0
+    top 0
+    transform translate(-100%, 0) rotate(10deg)
+    transform-origin top left
+    transition .2s transform ease-out
+    will-change transform
+    z-index -1
+    
+  &:hover::after
+    transform translate(0, 0)
+    
+  &:hover
+    border 2px solid transparent
+    color indigo
+    transform scale(1.05)
+    will-change transform
+}
+
+ /* Kleine Geräte (Tablets, 768px und breiter) */
+@media (min-width: 768px) and (max-width: 992px) { 
+    /*.col-sm-*/
+    .hidden-sm-down{
+        display: none !important;
     }
-      
+}
+
+/* Mittlere Geräte (Desktop-PCs, 992px und breiter) */
+@media (min-width: 922px) and (max-width: 1200px) { 
+    /*.col-md-*/
+
+    .hidden-md-down{
+    display: none !important;
+    }
+
+}
+
+/* Große Geräte (Desktop-PCs, 1200px und breiter) */
+@media (min-width: 1200px) { 
+    /*.col-lg-*/
+
+    .hidden-lg-down{
+        display: none !important;
+    }
+    
+}
+
+
+

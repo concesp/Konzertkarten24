@@ -2,122 +2,131 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Datenschutz</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>Datenschutzerklärung - Konzertkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
 
 	</head>
 	<body>	
 		<div class="container-fluid" style="background-color:white;">
 			<nav class="navbarnavbar-expand-sm bg-light">
 				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav container-fluid">
+					<div class="row">
 				<!--Links-->
-					<li class="nav-item">
-						<a class="nav-link" href="/Konzertkarten-Home.html">Home</a>
-				  	</li>
-				  	<li class="nav-item">
-						<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
-				  	</li>
-				  	<li class="nav-item">
-					  	<a class= "nav-link" href="Konzertkarten-News.html">News</a>
-				  	</li>
-				<!--Logo-->
-					<a class="navbar-brand" href="#">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" ;/>
-					
-
-					</a>
+						<div class="col-sm-3">
+			  				<li class="nav-item " >
+								<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					  		</li>
+						</div>	
+						<div class="col-sm-3">
+			  				<li class="nav-item">
+								<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
+					  		</li>
+						</div> 
+						<div class="col-sm-3">
+			  				<li class="nav-item">
+			  					<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  		</li>
+						</div>
+						<div class="col-sm-3">
+						<!--Logo-->
+							<li class="navbar-brand">
+								<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
+							</li>
+						</div>
+					</div>
 
 				</ul>
 			</nav>
 		</div>
 					
-		<div class="container-fluid">
-			<div class="container">	
-				<h1>Datenschutzerklärung</h1>
-				<h3>Allgemeiner Hinweis und Pflichtinformationen</h3>
-				<p><strong>Benennung der verantwortlichen Stelle</strong></p>
-				<p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-				<p><span id="s3-t-firma">Konzertkarten24 AG & Co. KGaA</span><br><span id="s3-t-ansprechpartner">Kundenservice</span><br><span id="s3-t-strasse">Contrescarpe 75A</span><br><span id="s3-t-plz">28195</span> <span id="s3-t-ort">Bremen</span></p><p></p>
-				<p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
+		<div class="container-fluid" id="idBackground" >
 
-				<p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
-				<p>Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+			<h1>Datenschutzerklärung</h1>
+			<h3>Allgemeiner Hinweis und Pflichtinformationen</h3>
+			<p><strong>Benennung der verantwortlichen Stelle</strong></p>
+			<p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+			<p><span id="s3-t-firma">Konzertkarten24 AG & Co. KGaA</span><br><span id="s3-t-ansprechpartner">Kundenservice</span><br><span id="s3-t-strasse">Contrescarpe 75A</span><br><span id="s3-t-plz">28195</span> <span id="s3-t-ort">Bremen</span></p><p></p>
+			<p>Die verantwortliche Stelle entscheidet allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).</p>
 
-				<p><strong>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</strong></p>
-				<p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
+			<p><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
+			<p>Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
 
-				<p><strong>Recht auf Datenübertragbarkeit</strong></p>
-				<p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+			<p><strong>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</strong></p>
+			<p>Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem sich der Sitz unseres Unternehmens befindet. Der folgende Link stellt eine Liste der Datenschutzbeauftragten sowie deren Kontaktdaten bereit: <a href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html" target="_blank">https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a>.</p>
 
-				<p><strong>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</strong></p>
-				<p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</p>
+			<p><strong>Recht auf Datenübertragbarkeit</strong></p>
+			<p>Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
 
-				<p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
-				<p>Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
+			<p><strong>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</strong></p>
+			<p>Sie haben jederzeit im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, Herkunft der Daten, deren Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit über die im Impressum aufgeführten Kontaktmöglichkeiten an uns wenden.</p>
 
-				<p><strong>Server-Log-Dateien</strong></p>
-				<p>In Server-Log-Dateien erhebt und speichert der Provider der Website automatisch Informationen, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
-				<ul>
-					<li>Besuchte Seite auf unserer Domain</li>
-					<li>Datum und Uhrzeit der Serveranfrage</li>
-					<li>Browsertyp und Browserversion</li>
-					<li>Verwendetes Betriebssystem</li>
-					<li>Referrer URL</li>
-					<li>Hostname des zugreifenden Rechners</li>
-					<li>IP-Adresse</li>
-				</ul>
-				<p>Es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Grundlage der Datenverarbeitung bildet Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+			<p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
+			<p>Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie über diese Website übermitteln, für Dritte nicht mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der Browserzeile.</p>
+
+			<p><strong>Server-Log-Dateien</strong></p>
+			<p>In Server-Log-Dateien erhebt und speichert der Provider der Website automatisch Informationen, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+			<ul>
+				<li>Besuchte Seite auf unserer Domain</li>
+				<li>Datum und Uhrzeit der Serveranfrage</li>
+				<li>Browsertyp und Browserversion</li>
+				<li>Verwendetes Betriebssystem</li>
+				<li>Referrer URL</li>
+				<li>Hostname des zugreifenden Rechners</li>
+				<li>IP-Adresse</li>
+			</ul>
+			<p>Es findet keine Zusammenführung dieser Daten mit anderen Datenquellen statt. Grundlage der Datenverarbeitung bildet Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
 							
-				<p><strong>Datenübermittlung bei Vertragsschluss für Warenkauf und Warenversand</strong></p>
-				<p>Personenbezogene Daten werden an Dritte nur übermittelt, sofern eine Notwendigkeit im Rahmen der Vertragsabwicklung besteht. Dritte können beispielsweise Bezahldienstleister oder Logistikunternehmen sein. Eine weitergehende Übermittlung der Daten findet nicht statt bzw. nur dann, wenn Sie dieser ausdrücklich zugestimmt haben.</p>
-				<p>Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+			<p><strong>Datenübermittlung bei Vertragsschluss für Warenkauf und Warenversand</strong></p>
+			<p>Personenbezogene Daten werden an Dritte nur übermittelt, sofern eine Notwendigkeit im Rahmen der Vertragsabwicklung besteht. Dritte können beispielsweise Bezahldienstleister oder Logistikunternehmen sein. Eine weitergehende Übermittlung der Daten findet nicht statt bzw. nur dann, wenn Sie dieser ausdrücklich zugestimmt haben.</p>
+			<p>Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
 							
-				<p><strong>Kontaktformular</strong></p>
-				<p>Per Kontaktformular übermittelte Daten werden einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.</p>
-				<p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</p>
-				<p>Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.</p>
+			<p><strong>Kontaktformular</strong></p>
+			<p>Per Kontaktformular übermittelte Daten werden einschließlich Ihrer Kontaktdaten gespeichert, um Ihre Anfrage bearbeiten zu können oder um für Anschlussfragen bereitzustehen. Eine Weitergabe dieser Daten findet ohne Ihre Einwilligung nicht statt.</p>
+			<p>Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom Widerruf unberührt.</p>
+			<p>Über das Kontaktformular übermittelte Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder keine Notwendigkeit der Datenspeicherung mehr besteht. Zwingende gesetzliche Bestimmungen - insbesondere Aufbewahrungsfristen - bleiben unberührt.</p>
 							
-				<p><strong>PayPal</strong></p>
-				<p>Unsere Website ermöglicht die Bezahlung via PayPal. Anbieter des Bezahldienstes ist die PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg.</p>
-				<p>Wenn Sie mit PayPal bezahlen, erfolgt eine Übermittlung der von Ihnen eingegebenen Zahlungsdaten an PayPal.</p>
-				<p>Die Übermittlung Ihrer Daten an PayPal erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Verarbeitung zur Erfüllung eines Vertrags). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich.
-					In der Vergangenheit liegende Datenverarbeitungsvorgänge bleiben bei einem Widerruf wirksam.</p>
-			</div>
+			<p><strong>PayPal</strong></p>
+			<p>Unsere Website ermöglicht die Bezahlung via PayPal. Anbieter des Bezahldienstes ist die PayPal (Europe) S.à.r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg.</p>
+			<p>Wenn Sie mit PayPal bezahlen, erfolgt eine Übermittlung der von Ihnen eingegebenen Zahlungsdaten an PayPal.</p>
+			<p>Die Übermittlung Ihrer Daten an PayPal erfolgt auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und Art. 6 Abs. 1 lit. b DSGVO (Verarbeitung zur Erfüllung eines Vertrags). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich.
+				In der Vergangenheit liegende Datenverarbeitungsvorgänge bleiben bei einem Widerruf wirksam.</p>
+
+		</div>
 
 
-		  <footer class="footer">
+		<footer class="footer">
 			<div class="container-fluid">
-			  <div class="row">
+			  	<div class="row">
 	
-					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
-						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
-					  </div>				
-					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
-					  </div>
-					  <div class="col-sm-3">
-						<div class="list-group">
-							<a class="list-group-item list-group-item-action" href="Konzertkarten-AGB.html">AGB</a>
-							<a class="list-group-item list-group-item-action" href="Konzertkarten-Datenschutzerklärung.html">Datenschutzerklärung</a>
-							<a class="list-group-item list-group-item-action" href="Konzertkarten-Impressum.html">Impressum</a>
-						</div> 
-					  </div>
-			  </div>
-			<p id="copy">© WinWomWeb 11-2020</p>
+					<div class="col-sm-3">
+					    <a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+						<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+						<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
+					</div>				
+					<div class="col-sm-6">
+						<p class="responsiveFont">Bestellhotline 0800 25437723</p>
+					</div>
+					<div class="col-sm-3">
+					<div class="list-group">
+						<a class="list-group-item list-group-item-action" href="Konzertkarten-AGB.html">AGB</a>
+						<a class="list-group-item list-group-item-action" href="Konzertkarten-Datenschutzerklärung.html">Datenschutzerklärung</a>
+						<a class="list-group-item list-group-item-action" href="Konzertkarten-Impressum.html">Impressum</a>
+					</div> 
+					</div>
+			  	</div>
+				<p id="copy">© WinWomWeb 11-2020</p>
 			</div>
 		</footer>
 

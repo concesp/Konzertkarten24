@@ -2,63 +2,236 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Jetzt Tickets sichern</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>Konzert - Konzertkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
 
 	</head>
 	<body>	
 		<div class="container-fluid" style="background-color:white;">
 			<nav class="navbarnavbar-expand-sm bg-light">
 				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav container-fluid">
+				<div class="row">
 				<!--Links-->
-					<li class="nav-item">
-						<a class="nav-link" href="/Konzertkarten-Home.html">Home</a>
-				  	</li>
-				  	<li class="nav-item">
+					<div class="col-sm-3">
+			  		<li class="nav-item " >
+						<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					  </li>
+					</div>	<div class="col-sm-3">
+			  		<li class="nav-item">
 						<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
-				  	</li>
-				  	<li class="nav-item">
-					  <a class= "nav-link" href="Konzertkarten-News.html">News</a>
-				  	</li>
+					  </li>
+					</div> <div class="col-sm-3">
+			  		<li class="nav-item">
+			  			<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  </li>
+					</div><div class="col-sm-3">
 				<!--Logo-->
-					<a class="navbar-brand">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" ;/>
-					
-
-					</a>
+					<li class="navbar-brand">
+						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
+					</li>
+					</div>
+				</div>
 
 				</ul>
 			</nav>
 		</div>
-					
-		  <div class="container-fluid">
-			<h3>xxx</h3>
-			<p>xxx</p>
-		  </div>
 
-		  <footer class="footer">
+
+
+		<script>
+
+			var tmp = "";
+
+			for (i = 0; i < 3; i++) {
+
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+				tmp += '';
+
+			}
+
+			$('#konzerttickets').html(temp);
+
+		</script>
+
+
+
+		<div class="container-fluid" style="background-color: white;">
+			<div class="row reihe" style="background-color: white;">
+				<h1 class="headlineKauf1" style="width: 70%;">EVENT ROBBIE WILLIAMS</h1>
+				<a class="kaufbutton1"  href="Konzertkarten-Konzerte.html" >&#10094; zurück zu den Konzerten</a>
+				<br>
+				<img src="../../Bilder_Hompage/1_Bild.jpeg" class="picKauf1">
+				
+				<p class="textKauf1">Für Robbie Williams-Fans ist in diesem Jahr bereits am 22. November Bescherung: Der britische Superstar veröffentlicht mit The Christmas Present das erste Weihnachtsalbum seiner Karriere und geht damit auf Tour. Für Robbie Williams-Fans ist in diesem Jahr bereits am 22. November Bescherung: Der britische Superstar veröffentlicht mit The Christmas Present das erste Weihnachtsalbum seiner Karriere und geht damit auf Tour.</p>
+			</div>
+			<br>
+			<!--Filter zum Sortieren style="width: 30%; float: right; margin-left: 0%; margin-right: 0%; margin-top: 85px; padding-right: 0%; background-color: rgba(255, 255, 255, 0.692);"-->
+			<div class="row reihe" style="background-color: white;">
+				<tr> 
+					<td> 
+						<select class="auswahlKonzert" name="sortDate" size="1">
+							<option checked>Datum aufsteigend</option>
+							<option >Datum absteigend</option>
+						</select>
+					</td>
+					<td>
+						<select class="auswahlKonzert" style="margin-right: 5%;" name="sortLocation" size="1">
+							<option checked>Ort sortiert von A nach Z</option>
+							<option >Ort sortiert von Z nach A</option>
+						</select>
+					</td>
+					<td>
+						<select class="auswahlKonzert" style="float: right; margin-right: 0%;" name="sortPrice" size="1">
+							<option checked>Preis aufsteigend</option>
+							<option >Preis absteigend</option>
+						</select>
+					</td>
+				</tr>
+			</div>
+
+			<!--Auswahl Ticket, weiterleitung zum Kaufprozess-->
+			<div class="kon">
+			 	<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<p class="datum1">01.02.2021</p>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">Berlin</h2>
+						<p>Messehalle - Charlottenstraße 146/5, 10557 Tiergarten</p>
+					</div>
+					<div class="col-sm-2">
+						<a class="kaufbutton" id="button2" href="Konzertkarten-Kaufabwicklung2.html" >Tickets kaufen<br />25,90€</a>
+					</div>
+				</div>
+				<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<p class="datum1">12.05.2021</p>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">Hamburg</h2>
+						<p>Porschearena - Ludwigstraße 57, 24987 </p>
+					</div>
+					<div class="col-sm-2">
+						<a class="kaufbutton" id="button2" href="Konzertkarten-Kaufabwicklung2.html" >Tickets kaufen<br />19,99€</a>
+					</div>
+				</div>	
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+
+
+		<!-- <div class="container-fluid" style="background-color: white;">
+			<div class="row reihe" style="background-color: white;">
+				<h1 class="headlineKauf1" style="width: 70%;">EVENT ROBBIE WILLIAMS</h1>
+				<a class="kaufbutton" style="width: 30%; float: right; margin-left: 0%; margin-right: 0%; margin-top: 85px; padding-right: 0%; background-color: rgba(255, 255, 255, 0.692);" id="button2" href="Konzertkarten-Konzerte.html" ><h2>zurück zu den Konzerten</h2> </a>
+				<br>
+				<img src="../../Bilder_Hompage/1_Bild.jpeg" class="picKauf1">
+				
+				<p class="textKauf1">Für Robbie Williams-Fans ist in diesem Jahr bereits am 22. November Bescherung: Der britische Superstar veröffentlicht mit The Christmas Present das erste Weihnachtsalbum seiner Karriere und geht damit auf Tour. Für Robbie Williams-Fans ist in diesem Jahr bereits am 22. November Bescherung: Der britische Superstar veröffentlicht mit The Christmas Present das erste Weihnachtsalbum seiner Karriere und geht damit auf Tour.</p>
+			</div>
+			<br> -->
+			<!--Filter zum Sortieren-->
+			<!-- <div class="row reihe" style="background-color: white;">
+				<tr> 
+					<td> 
+						<select class="auswahlKonzert" name="sortDate" size="1">
+							<option checked>Datum aufsteigend</option>
+							<option >Datum absteigend</option>
+						</select>
+					</td>
+					<td>
+						<select class="auswahlKonzert" style="margin-right: 5%;" name="sortLocation" size="1">
+							<option checked>Ort sortiert von A nach Z</option>
+							<option >Ort sortiert von Z nach A</option>
+						</select>
+					</td>
+					<td>
+						<select class="auswahlKonzert" style="float: right; margin-right: 0%;" name="sortPrice" size="1">
+							<option checked>Preis aufsteigend</option>
+							<option >Preis absteigend</option>
+						</select>
+					</td>
+				</tr>
+			</div> -->
+
+			<!--Auswahl Ticket, weiterleitung zum Kaufprozess-->
+			<!-- <div class="kon">
+			 	<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<p class="datum1">01.02.2021</p>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">Berlin</h2>
+						<p>Messehalle - Charlottenstraße 146/5, 10557 Tiergarten</p>
+					</div>
+					<div class="col-sm-2">
+						<a class="kaufbutton" id="button2" href="Konzertkarten-Kaufabwicklung2.html" >Tickets kaufen<br />25,90€</a>
+					</div>
+				</div>
+				<div class="row reihe">
+					<div class="col-sm-4 karte">
+						<p class="datum1">12.05.2021</p>
+					</div>
+					<div class="col-sm-6 beschreibung">
+						<h2 id="orangeh2">Hamburg</h2>
+						<p>Porschearena - Ludwigstraße 57, 24987 </p>
+					</div>
+					<div class="col-sm-2">
+						<a class="kaufbutton" id="button2" href="Konzertkarten-Kaufabwicklung2.html" >Tickets kaufen<br />19,99€</a>
+					</div>
+				</div>	
+			</div>
+
+		</div> -->
+
+		<footer class="footer">
 			<div class="container-fluid">
 			  <div class="row">
-	
-					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
-						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
-					  </div>				
+						<div class="col-sm-3">
+							<a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+							<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+							<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
+						</div>				
 					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
+						  <p class="responsiveFont">Bestellhotline 0800 25437723</p>
 					  </div>
 					  <div class="col-sm-3">
 						<div class="list-group">

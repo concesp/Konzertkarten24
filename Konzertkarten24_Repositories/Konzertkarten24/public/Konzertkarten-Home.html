@@ -2,110 +2,133 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>Home - Konzertkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
-
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
+		
 	</head>
 	<body onload="carousel();">	
 		<div class="container-fluid" style="background-color:white;">
+			
 			<nav class="navbarnavbar-expand-sm bg-light">
 				
-				<ul class="navbar-nav">
-				<!--Links-->
-			  		<li class="nav-item">
-						<a class="nav-link" href="/Konzertkarten-Home.html">Home</a>
-			  		</li>
-			  		<li class="nav-item">
-						<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
-			  		</li>
-			  		<li class="nav-item">
-			  			<a class= "nav-link" href="Konzertkarten-News.html">News</a>
-					  </li>
-				<!--Logo-->
-					<a class="navbar-brand" href="#">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
-					</a>
+				<ul class="navbar-nav container-fluid">
+					<div class="row">
+					<!--Links-->
+						<div class="col-sm-3">
+			  				<li class="nav-item " >
+								<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					  		</li>
+						</div>	
+						<div class="col-sm-3">
+			  				<li class="nav-item">
+								<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
+					  		</li>
+						</div> 
+						<div class="col-sm-3">
+			  				<li class="nav-item">
+			  					<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  		</li>
+						</div>
+						<div class="col-sm-3">
+						<!--Logo-->
+							<li class="navbar-brand">
+								<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" class="img-fluid"/>
+							</li>
+						</div>
+					</div>
 				</ul>
 			</nav>
 		</div>
-		<div class="container">
-			<div class="ex1">
+	
+		<div>
 
-				<h2 class="center">Automatic Slideshow</h2>
+			<div class="container-fluid" style="background-color: white;">
+				<div class="row">
+				<!--Button vor und zurück-->
+					<div class="col-sm-3 d-none d-sm-block">
+						<a class="prev " onclick="caroplus(-1)">&#10094;</a>
+					</div>
+					<div class="slide col-sm-6">
+						<br>
+						<h2><b>Aktuelle Angebote, jetzt zugreifen!</b></h2>
+						<br>
+						<div class="content section" style="max-width:600px">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/1_Werbebanner.jpg" style="width:100%">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/2_Werbebanner.jpg" style="width:100%">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/9_Werbebanner.jpeg" style="width:100%">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/11_Werbebanner.jpeg" style="width:100%">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/12_Werbebanner.jpg" style="width:100%">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/13_Werbebanner.jpg" style="width:100%">
+							<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/16_Werbebanner.jpeg" style="width:100%">
 
-				<div class="content section" style="max-width:500px">
-  					<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/1_Werbebanner.jpg" style="width:100%">
-  					<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/1_Werbebanner.jpg" style="width:100%">
- 					<img class="mySlides animate-fading" src="../../Bilder_Hompage/Werbebanner/1_Werbebanner.jpg" style="width:100%">
+
+							<!--Link+ Text-->
+							<div class="row">
+								<div id="home-link1" class="col-sm-6">
+									<div>
+										<p>01.01.2021 bis 31.12.2021</p>
+										<p>Deutschlandtour</p> 
+									</div>
+								</div>
+
+								<div id="home-link" class="col-sm-6">
+									<a id="home-link-2" href="Konzertkarten-Konzerte.html">Zu den Tickets</a>
+								</div>
+	
+							</div>
+							<div>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+								sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+								At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.T
+							</div>
+					
+						</div>
+					</div>
+
+					<div class="col-sm-3  d-none d-sm-block"  >
+						<a class="next " onclick="caroplus(+1)">&#10095;</a>
+					</div>
 				</div>
 
+			</div>	
 
-<!--Link+ Text-->
-<div class="row">
-	<div class="col-sm-6">
-		<div><p>01.01.2021 bis 31.12.2021</p>
-			<p>Deutschlandtour</p> 
-		</div>
-	</div>
-	<div class="col-sm-6">
-		<a href="/Konzertkarten-Konzerte">Zu den Tickets</a>
-	</div>
-
-</div>
-
-<div>NUR TEXT</div>
-				
-
-
-
-
-
-			</div>
-
-
-
-		</div>
-
-
-  </div> 
-
-		  </div>
+		</div>	
 	
-		  <footer class="footer">
+		<footer class="footer">
 			<div class="container-fluid">
-			  <div class="row">
-	
-					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
+				<div class="row">
+					<div class="col-sm-3">
 						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
-					  </div>				
-					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
-					  </div>
-					  <div class="col-sm-3">
-						<div class="list-group">
+							<a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+							<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+							<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
+						 
+					</div>								
+					<div class="col-sm-6">
+						<p class="responsiveFont">Bestellhotline 0800 25437723</p>
+					</div>
+					<div class="col-sm-3">
+					 	<div class="list-group">
 							<a class="list-group-item list-group-item-action" href="Konzertkarten-AGB.html">AGB</a>
 							<a class="list-group-item list-group-item-action" href="Konzertkarten-Datenschutzerklärung.html">Datenschutzerklärung</a>
 							<a class="list-group-item list-group-item-action" href="Konzertkarten-Impressum.html">Impressum</a>
 						</div> 
-					  </div>
-			  </div>
-			<p id="copy">© WinWomWeb 11-2020</p>
+					</div>
+				</div>
+				<p id="copy">© WinWomWeb 11-2020</p>
 			</div>
+			
 		</footer>
-
-	
 	</body>
 </html>

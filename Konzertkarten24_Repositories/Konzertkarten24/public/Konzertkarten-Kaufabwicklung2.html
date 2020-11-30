@@ -2,74 +2,202 @@
 <html lang="de">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Tickets</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="WinWomWeb">
+		<title>Kaufabwicklung - Konzertkarten24</title>
 		<!-- Das neueste kompilierte und minimierte CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
 		<!--Unser CSS-->
 		<link rel="stylesheet" href="stylesheets/style.css">
 
-		<!-- Das neueste kompilierte und minimierte JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="bootstrap-4.3.1/js/bootstrap.min.js" defer></script>
+		<!-- Das (neueste kompilierte und minimierte) JavaScript  Derzeit noch nicht genutzt, wird möglicherweise im Projektverlauf ergänzt-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<!--Unser JavaSkript-->
-  		<script src="javascripts/konzertClient.js" defer></script>
+  		<script src="javascripts/konzertFunkClient.js" defer></script>
 
 	</head>
 	<body>	
 		<div class="container-fluid" style="background-color:white;">
 			<nav class="navbarnavbar-expand-sm bg-light">
 				
-				<ul class="navbar-nav">
+				<ul class="navbar-nav container-fluid">
+					<div class="row">
 				<!--Links-->
-					<li class="nav-item">
-						<a class="nav-link" href="/Konzertkarten-Home.html">Home</a>
-				  	</li>
-				  	<li class="nav-item">
+					<div class="col-sm-3">
+			  		<li class="nav-item " >
+						<a class="nav-link" href="Konzertkarten-Home.html">Home</a>
+					  </li>
+					</div>	<div class="col-sm-3">
+			  		<li class="nav-item">
 						<a class="nav-link" href="Konzertkarten-Konzerte.html">Konzerte</a>
-				  	</li>
-				  	<li class="nav-item">
-					  <a class= "nav-link" href="Konzertkarten-News.html">News</a>
-				  	</li>
+					  </li>
+					</div> <div class="col-sm-3">
+			  		<li class="nav-item">
+			  			<a class= "nav-link" href="Konzertkarten-News.html">News</a>
+					  </li>
+					</div><div class="col-sm-3">
 				<!--Logo-->
-					<a class="navbar-brand">
-						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo" ;/>
-					
-
-					</a>
+					<li class="navbar-brand">
+						<img src="..\..\Bilder_Hompage\logo1.png" alt="logo"/>
+					</li>
+					</div>
+				</div> <!--row-->
 
 				</ul>
 			</nav>
 		</div>
-					
-		  <div class="container-fluid">
-			<h3>xxx</h3>
-			<p>xxx</p>
-		  </div>
+		<div class="kon">
+			<div class="reihe" >
+				<h2><b>Bestellübersicht</b></h2>
+				<br>
+				<form class="form-horizontal" method='GET' action="Konzertkarten-Kaufbestätigung.html">
+					<div class="row">
+						<div class="col-sm-6">
+						
+							<div class="form-group ">
+								<label class="control-label" >Anzahl Karten:</label>
+								<input  type="number" name="#karten" min="1" max="100" value="1"  required style="text-align: center;"/>
+							</div>
 
-		  <footer class="footer">
-			<div class="container-fluid">
-			  <div class="row">
-	
-					  <div class="col-sm-3">
-					    <img src="..\..\Bilder_Hompage\facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" >
-						
-						  <img src="..\..\Bilder_Hompage\twitter.png" class="rounded" alt="twitter" style="width: 50px;">
-						
-						  <img src="..\..\Bilder_Hompage\insta.jpeg" class="rounded" alt="instagram" style="width: 50px;">
-					  </div>				
-					  <div class="col-sm-6">
-						  <p>Bestellhotline 0800 25437723</p>
-					  </div>
-					  <div class="col-sm-3">
-						<div class="list-group">
-							<a class="list-group-item list-group-item-action" href="Konzertkarten-AGB.html">AGB</a>
-							<a class="list-group-item list-group-item-action" href="Konzertkarten-Datenschutzerklärung.html">Datenschutzerklärung</a>
-							<a class="list-group-item list-group-item-action" href="Konzertkarten-Impressum.html">Impressum</a>
-						</div> 
-					  </div>
-			  </div>
-			<p id="copy">© WinWomWeb 11-2020</p>
+							<div class="form-group ">
+								<div>
+									<p> <span class="movebtn"><input type="radio" class="form-check-input"  name="anrede" value="mann" checked required></span>		
+										<span class="movetext"><label class="control-label" for="name">Herr</label></span>
+										<span class="movebtn"><input type="radio" class="form-check-input"  name="anrede" value="frau" required></span>							
+										<span class="movetext"><label class="control-label col-sm-3" for="name">Frau</label></span>
+									</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="name">Name, Vorname:*</label>
+								<div class="row"> 
+									<div class="col-sm-6">
+									<input type="Name" class="form-control" id="name" placeholder="Mustermann" name="name" type="text"  maxlength="40"  pattern="[A-Za-zÄÖÜäöüß-]+" required/>
+									</div>
+									<div class="col-sm-6">
+										<input type="Vorname" class="form-control" id="vname" placeholder="Max" name="name" type="text"  maxlength="40"  pattern="[A-Za-zÄÖÜäöüß-]+" required/>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="str">Straße und Hausnr.*:</label>
+								<div class="#">          
+								<input type="steet" class="form-control" placeholder="Hauptstr. 1" name="street" type="text"  maxlength="40" pattern="[A-Za-zÄÖÜäöüß-.' ']+[0-9]+"required/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="plz">PLZ,Ort*:</label>
+								<div class="row">
+										<div class="col-sm-3">          
+										<input type="plz" class="form-control"  placeholder="88000" name="plz" maxlength="5" pattern="[0-9]{5}" required/>
+										</div>
+
+										<div class="col-sm-9">          
+											<input type="ort" class="form-control"  placeholder="Musterstadt" name="ort" maxlength="40" pattern="[A-Za-z]+" required/>
+										</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="tel">Telefonnummer:</label>
+								<div class="#">          
+									<input type="phone" class="form-control" placeholder="070012345" name="phone" maxlength="30"  pattern="[0-9]+"/>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="tel">E-Mail:*</label>
+								<div class="#">          
+									<input type="mail" class="form-control" placeholder="max-mustermann@gmail.com" name="mail" maxlength="30" pattern="^[^\s@]+@[^\s@]+\.[^\s@]{2,}$" required/>
+								</div>
+							</div>
+
+						</div>	<!--Ende 1.Teil-row-->			
+					
+					<!--Bild Abfrage DB Produkt-->
+					<div class="col-sm-6">
+						<div>
+							<img src="../../Bilder_Hompage/1_Karte.jpeg" alt="karte" width="80%">
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-sm-5"><h5>Konzert, Veranstaltungsort</h5></div> 
+							<div class="col-sm-5"><p><b>####</b></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-5"><h5>Datum, Uhrzeit</h5></div>
+							<div class="col-sm-5"><p><b>####</b></p></div>
+						</div>
+						<div class="row">
+							<div class="col-sm-5"><h5>Zwischensumme inkl. Mwst.</h5></div> 
+							<div class="col-sm-5"><p><b>####</b></p></div>
+						</div>
+					</div>
+
+				</div><!--Ende Row-->
+
+					<div class="container" style="background-color:white;">
+					<!--Datenbank abfrage + rechnen-->
+						<div class="container">	
+
+							<div class="row">
+								<div class="col-sm-5"><h5><b>Zahlungsmethode</b></h5></div>
+							</div>
+						</div>
+						<!--Zahlungsart wählen-->	
+						<div class="container">
+							<div class="row">
+								<div class="form-check-inline col-sm-5">
+									<input type="radio" class="form-check-input" id="vorkasse" name="zahlung" value="vorkasse" checked>
+									<label for="vorkasse"><img src="../../Bilder_Hompage/Vorkasse.jpeg"></label>
+								</div>
+								<div class="form-check-inline col-sm-5">
+									<input type="radio" class="form-check-input" id="paypal" name="zahlung" value="paypal">
+									<label for="paypal"><img src="../../Bilder_Hompage/PayPal.jpeg"></label>
+								</div>
+							</div>
+						</div>
+					<div class="container">
+						<div class="row">
+							<!--AGB+Datenschutz-->
+							<div class="custom-control custom-switch col-sm-12">
+								<p><input type="checkbox" id="AGB" required name="AGB"> <a href="Konzertkarten-AGB.html"> AGBs</a> gelesen und akzeptiert </p>
+								<p><input type="checkbox" id="datenschutz" required name="datenschutz"><a href="Konzertkarten-Datenschutzerklärung.html"> Datenschutzerklärung</a> gelesen und akzeptiert</p>
+							</div>
+
+							<div class="col-sm-12">
+								<button type="submit" class="button3" onclick=$ >Jetzt<br/> kaufen</button>
+							</div>
+						</div>
+					</div>	
+					</div> <!--row-->
+				</form><!--Ende Form-->
 			</div>
-		</footer>
-	</body>
+	 	</div>
+<br />
+<br />
+<br />
+
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<a href="https://www.facebook.com"><img src="../../Bilder_Hompage/facebook.jpg" class="rounded" alt="facebook"   style="width: 50px;" ></a>
+					<a href="https://www.twitter.com"><img src="../../Bilder_Hompage/twitter.png" class="rounded" alt="twitter" style="width: 50px;"></a>
+					<a href="https://www.instagram.com"><img src="../../Bilder_Hompage/insta.jpeg" class="rounded" alt="instagram" style="width: 50px;"></a>
+				</div>				
+				<div class="col-sm-6">
+					<p class="responsiveFont">Bestellhotline 0800 25437723</p>
+				</div>
+				<div class="col-sm-3">
+					<div class="list-group">
+						<a class="list-group-item list-group-item-action" href="Konzertkarten-AGB.html">AGB</a>
+						<a class="list-group-item list-group-item-action" href="Konzertkarten-Datenschutzerklärung.html">Datenschutzerklärung</a>
+						<a class="list-group-item list-group-item-action" href="Konzertkarten-Impressum.html">Impressum</a>
+					</div> 
+				</div>
+			</div>
+			<p id="copy">© WinWomWeb 11-2020</p>
+		</div>
+	</footer>
+</body>
 </html>
